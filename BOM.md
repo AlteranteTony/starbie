@@ -20,7 +20,7 @@
 | [cherry mx switches](https://www.sunrom.com/m/6479) | to click | 1 | $2.20 | $2.20 | [Sunrom electronics](https://www.sunrom.com/m/6479) |
 | [pcb](https://cart.jlcpcb.com/shopcart/cart/) | to put stuff on | 1 | $10.00 | $10.00 | [jlcpcb](https://cart.jlcpcb.com/shopcart/cart/) |
 | **Parts subtotal** | — | — | — | **$23.85** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$23.85** | — |
+| **Tax & shipping** | — | — | — | **$4.00** | — |
+| **Total** | — | — | — | **$27.85** | — |
 
-$6.15 left of the tier's funding.
+$2.15 left of the tier's funding.
