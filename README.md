@@ -1,10 +1,17 @@
 # starbie
-a fun  liitle pet !
+a fun  little pet !
 
 starbie is cute fun little  interactive digital pet
-this project includes a cutom digital pet - which i named LEgoat
+this project includes a custom digital pet - which i named LEgoat
 
 it uses parts such as esp32-c3 , switches , resistor , MPU6050 module ,an oled screen and a DHT11 sensor.
+
+#What does starbie do:
+Starbie is a cute interactive desk pet that reacts to you and your surroundings.
+
+Its purpose is to make a small gadget feel alive you interact with it using two keys, it displays a pixel-art character (Le goat), and its sensors let it react to movements and environment.
+It’s essentially a DIY Tamagotchi-style companion with real-world sensors, built using PCB and code.
+
 
 ![image alt]( https://github.com/AlteranteTony/starbie/blob/2ed99856e868ce408fd0646d3987f0d527796926/sch1.png)
 
@@ -16,7 +23,12 @@ what is in the repo
 -production 1 contains files for fabrication of pcb
 
 how to set up firmware ( use arduino ide)
--open the firmware folder. install listed libraries now select xiao esp32 c3 board and the correct port and upload the code.
+-open the firmware folder. install listed libraries now select xiao esp32 c3 board and the correct port and upload the code. after that you are basically good to go.
+
+##Tech stack
+- kicad
+- c++
+-arduino ide
 
 
 YOU CAN CUSTOMIZE THE PET IF YOU WANT !!
