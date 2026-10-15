@@ -6,6 +6,8 @@ this project includes a cutom digital pet - which i named LEgoat
 
 it uses parts such as esp32-c3 , switches , resistor , MPU6050 module ,an oled screen and a DHT11 sensor.
 
+![image alt]( https://github.com/AlteranteTony/starbie/blob/2ed99856e868ce408fd0646d3987f0d527796926/sch1.png)
+
 what is in the repo
 - starbie.ino this includes the code
 -BOM.md it contins bill of materials
@@ -22,4 +24,6 @@ YOU CAN CUSTOMIZE THE PET IF YOU WANT !!
 PCB WAS CHECKED FOR ERRORS USING KI CAD'S DRC. CHECK PCB FOR ERROR BEFORE MANUFACTURING THE PCB 
 
 
-/home/novexiabb/Videos/Screenshot from 2026-10-09 23-47-49.png
+FINAL LOOK FOR PCB
+
+
