@@ -26,4 +26,8 @@ PCB WAS CHECKED FOR ERRORS USING KI CAD'S DRC. CHECK PCB FOR ERROR BEFORE MANUFA
 
 FINAL LOOK FOR PCB
 
+![image alt](https://github.com/AlteranteTony/starbie/blob/653a51dd401e3277d5c9f7e93e20e1d4f9f48382/pcb1.png)
+
+
+3D render of PCB
 
