@@ -43,3 +43,21 @@ FINAL LOOK FOR PCB
 
 3D render of PCB
 ![image alt](https://github.com/AlteranteTony/starbie/blob/40dc25fa13a34689987a8b8a6f80386a0d33baa0/3d%20render1.png)
+
+## Bill of Materials (BOM)
+
+The following components are used to build Starbie.
+
+| Designator | Footprint | Quantity | Value | vendor name | Unit Price ($) | Line Total ($) | Link |
+|---|---|---:|---|---|---:|---:|---|
+| J1 | Display_128x64_096_I2C | 1 | Conn_01x04_Pin | Sharvi electronics | 2.17 | 2.17 | https://sharvielectronics.com/product/0-96-inch-i2c-4pin-oled-display-module-white/ |
+| J2 | MPU6050_Module | 1 | Conn_01x08_Pin | Sharvi electronics | 1.95 | 1.95 | https://sharvielectronics.com/product/mpu-6050-3-axis-accelerometer-and-gyro-sensor/ |
+| R1 | R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal | 1 | 10K | Sharvi electronics | 0.26 | 0.26 | https://sharvielectronics.com/product/10k-ohm-1-2-watt-resistor-1-tolerance/ |
+| SW1, SW2 | SW_Cherry_MX_1.00u_PCB | 2 | SW_Push | Sunrom electronics | 1.2 | 2.40 | https://www.sunrom.com/m/6479 |
+| U1 | XIAO-ESP32-C6-DIP | 1 | XIAO-ESP32-C3-SMD | Sharvi electronics | 6.56 | 6.56 | https://sharvielectronics.com/product/seeed-studio-xiao-esp32c3-tiny-mcu-board-with-wifi-and-ble-battery-charge-supported-module/ |
+| U2 | Aosong_DHT11_5.5x12.0_P2.54mm | 1 | DHT11 | Sharvi electronics | 0.71 | 0.71 | https://sharvielectronics.com/product/dht11-temperature-and-humidity-sensor-module/ |
+| N/A | PCB | 1 | - | JLCPCB | 10 | 10 | https://jlcpcb.com/ |
+| | | | | TOTAL= | $24.5 | | |
+
+*Prices are estimates and may change. Shipping, taxes, and other charges may not be included.*
+
