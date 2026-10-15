@@ -6,7 +6,7 @@ this project includes a custom digital pet - which i named LEgoat
 
 it uses parts such as esp32-c3 , switches , resistor , MPU6050 module ,an oled screen and a DHT11 sensor.
 
-#What does starbie do:
+# What does starbie do:
 Starbie is a cute interactive desk pet that reacts to you and your surroundings.
 
 Its purpose is to make a small gadget feel alive you interact with it using two keys, it displays a pixel-art character (Le goat), and its sensors let it react to movements and environment.
@@ -22,13 +22,46 @@ what is in the repo
 -project file - pcb layout , circuit design
 -production 1 contains files for fabrication of pcb
 
+
+## Tech stack
+- kicad
+- c++
+- arduino ide
+
 how to set up firmware ( use arduino ide)
 -open the firmware folder. install listed libraries now select xiao esp32 c3 board and the correct port and upload the code. after that you are basically good to go.
 
-##Tech stack
-- kicad
-- c++
--arduino ide
+## How to Use starbie
+
+### Controls
+
+- **Button 1:** Opens the action menu and confirms a selected action.
+- **Button 2:** Toggles the stats screen.
+- **Tilt:** Moves the selection in the action menu.
+- **Shake:** Give LEgoat a small joy boost.
+
+### Actions
+
+| Action | Reaction |
+|---|---|
+| **NAP** | it falls asleep for 48 seconds and regains energy. |
+| **PLAY** | it runs around the screen and gains joy. |
+| **FEED** |it jumps and gains fullness. |
+| **PET** | it jumps and shows floating hearts. |
+
+### Stats
+
+it tracks three pet stats:
+
+- **Joy** — increases through interaction and play.
+- **Energy** — increases with naps and decreases with play.
+- **Fullness** — increases with feeding and decreases with activity.
+
+Stats range from 0 to 100 
+
+### Sensors
+
+The MPU6050 detects movement and controls the action menu. The DHT11 measures temperature and humidity, which are displayed on the stats screen.
 
 
 YOU CAN CUSTOMIZE THE PET IF YOU WANT !!
