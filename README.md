@@ -1,16 +1,14 @@
 # starbie
 a fun  little pet !
 
-starbie is cute fun little  interactive digital pet
+starbie isa cute fun little  interactive digital pet
 this project includes a custom digital pet - which i named LEgoat
 
-it uses parts such as esp32-c3 , switches , resistor , MPU6050 module ,an oled screen and a DHT11 sensor.
+starbie uses parts such as esp32-c3 , switches , resistor , MPU6050 module ,an oled screen and a DHT11 sensor.
 
 # What does starbie do:
 Starbie is a cute interactive desk pet that reacts to you and your surroundings.
-
-Its purpose is to make a small gadget feel alive you interact with it using two keys, it displays a pixel-art character (Le goat), and its sensors let it react to movements and environment.
-It’s essentially a DIY Tamagotchi-style companion with real-world sensors, built using PCB and code.
+it is a small digital pet (LEgoat) that has 2 buttons and mpu6050 module , the mpu6050 module helps it make reactive to tilting and shaking .
 
 
 ![image alt]( https://github.com/AlteranteTony/starbie/blob/2ed99856e868ce408fd0646d3987f0d527796926/sch1.png)
@@ -35,31 +33,16 @@ how to set up firmware ( use arduino ide)
 
 ### Controls
 
-- **Button 1:** Opens the action menu and confirms a selected action.
-- **Button 2:** Toggles the stats screen.
-- **Tilt:** Moves the selection in the action menu.
-- **Shake:** Give LEgoat a small joy boost.
+- Button 1 =it  Opens the action menu and confirms a selected action.
+- Button 2 = Toggles the stats screen.
+- Shake = Give LEgoat a small joy boost.
 
 ### Actions
-
-| Action | Reaction |
-|---|---|
-| **NAP** | it falls asleep for 48 seconds and regains energy. |
-| **PLAY** | it runs around the screen and gains joy. |
-| **FEED** |it jumps and gains fullness. |
-| **PET** | it jumps and shows floating hearts. |
-
-### Stats
-
-it tracks three pet stats:
-
-- **Joy** — increases through interaction and play.
-- **Energy** — increases with naps and decreases with play.
-- **Fullness** — increases with feeding and decreases with activity.
+the stabie has actions like nap , play , feed ,pet . pet action makes LEgoat jump and show hearts. when you use Feed it gains fullness . when using play runs around the screen and gains joy . Nap it goes to sleep.
 
 Stats range from 0 to 100 
 
-### Sensors
+### Sensors use in project
 
 The MPU6050 detects movement and controls the action menu. The DHT11 measures temperature and humidity, which are displayed on the stats screen.
 
