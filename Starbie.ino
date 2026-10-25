@@ -57,6 +57,7 @@ enum PetReaction {
   JUMP_REACTION,
   HEART_REACTION,
   RUN_REACTION,
+  LAUGH_REACTION,
 };
 
 struct MenuItem {
@@ -71,7 +72,7 @@ const MenuItem MENU_ITEMS[] = {
   {"NAP",   1,  18, -4, NAP_REACTION},   // top: sleep and emit Zs
   {"PLAY", 12, -9, -5, RUN_REACTION},    // right: two fast laps + hearts
   {"FEED",  3,  2,  18, JUMP_REACTION},  // bottom: wiggle and jump
-  {"PET",   7,  0,  0, HEART_REACTION},  // left: jump and emit hearts
+   {"PET", 7, 0, 0, LAUGH_REACTION},
 };
 const int MENU_ITEM_COUNT = sizeof(MENU_ITEMS) / sizeof(MENU_ITEMS[0]);
 
@@ -202,6 +203,8 @@ uint32_t shakeAnimationEndsAt = 0;
 uint32_t petJumpStartedAt = 0;
 uint32_t nappingUntil = 0;
 uint32_t heartAnimationEndsAt = 0;
+uint32_t laughAnimationEndsAt = 0;
+const uint16_t LAUGH_DURATION_MS = 2000;
 uint32_t playRunStartedAt = 0;
 int nappingPetX = 0;
 
@@ -398,6 +401,7 @@ void chooseMenuItem() {
   nappingUntil = 0;
   heartAnimationEndsAt = 0;
   playRunStartedAt = 0;
+  laughAnimationEndsAt = 0;
 
   if (item.reaction == NAP_REACTION) {
     petJumpStartedAt = 0;
@@ -413,6 +417,9 @@ void chooseMenuItem() {
     if (item.reaction == HEART_REACTION) {
       heartAnimationEndsAt = now + HEARTS_DURATION_MS;
     }
+	  if (item.reaction == LAUGH_REACTION) {
+  laughAnimationEndsAt = now + LAUGH_DURATION_MS;
+}
   }
   currentView = PET_VIEW;
 }
@@ -475,6 +482,22 @@ void drawSleepZs(uint32_t now, int petX, int petY) {
   display.setCursor(petX + 28, petY - 8 - rise / 2);
   display.print("z");
 }
+void drawLaugh(uint32_t now, int petX, int petY) {
+  if (now >= laughAnimationEndsAt) {
+    return;
+  }
+
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+
+  if ((now / 180) % 2 == 0) {
+    display.setCursor(petX + 13, petY - 8);
+    display.print("HA");
+  } else {
+    display.setCursor(petX + 10, petY - 8);
+    display.print("HA!");
+  }
+}
 
 void drawPet() {
   display.clearDisplay();
@@ -517,6 +540,7 @@ void drawPet() {
     drawSleepZs(now, petX, petY);
   }
   drawHearts(now, petX, petY);
+  drawLaugh(now, petX, petY);
 }
 
 void drawMenuItem(int item) {
