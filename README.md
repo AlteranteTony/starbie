@@ -38,7 +38,7 @@ how to set up firmware ( use arduino ide)
 - Shake = Give LEgoat a small joy boost.
 
 ### Actions
-the stabie has actions like nap , play , feed ,pet . pet action makes LEgoat jump and show hearts. when you use Feed it gains fullness . when using play runs around the screen and gains joy . Nap it goes to sleep.
+the starbie has actions like nap , play , feed , laugh . laugh action makes LEgoat jump and show ha ha text. when you use Feed it gains fullness . when using play runs around the screen and gains joy . Nap it goes to sleep.
 
 Stats range from 0 to 100 
 
